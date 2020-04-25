@@ -1,0 +1,2 @@
+明日计划：继续password测试,
+明日计划：解决AuthenticationManager 栈溢出问题
