@@ -1,0 +1,16 @@
+Prototype 原型模式
+	通过clone创建对象，即通过拷贝已存在对象创建新的对象，而不是new
+	Applicability：
+		Use the Prototype pattern when a system should be independent of how its products are created, composed and represented（尚未理解）
+		在run-time时实例化，即dynamic loading
+		To avoid building a class hierarchy of factories that parallels the class hierarchy of products。为了避免建立与产品的类层次结构平行的工厂的类层次结构（尚未理解）
+		当类的实例只能具有几种不同的状态组合之一时。每次具有适当状态时，install相应数量的原型并克隆它们比手动实例化类要方便得多。
+		When object creation is expensive compared to cloning 当创建对象比克隆更昂贵
+	特点：
+		实现Cloneable 
+Property 模式
+	The Property pattern is also known as Prototype inheritance
+	Applicability：
+		When you like to have objects with dynamic set of fields and prototype inheritance
+	用法：
+		原型继承与java继承相反，Objects用于创建另一个Objects和object hierarchies,用Delegation Prototype chain创建Hierachies,每一个对象都有parent object的链接,所有的base(parent)对象都能够修改(添加或删除)父对象属性，所有子类都会受到影响

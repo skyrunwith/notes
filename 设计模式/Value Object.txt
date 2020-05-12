@@ -1,0 +1,17 @@
+Value Object：VALue Java对象-VALJO
+	在计算机科学中，值对象是一个小的对象，它表示一个简单的实体，其相等性不基于标识：即，两个值对象在具有相同值时是相等的，不一定是相同的对象。
+	适用情况：
+		比较两个对象值相等的时候
+	实例：
+		java.util.Optional
+		java.time.LocalDate
+		joda-time,money,beans
+	特点：
+		相同值的对象相等，不一定需要引用相等
+		必须重载 equals、hashCode
+		变量必须是final
+		The elements of the state must be other values, including primitive types 目前理解为变量都是原始类型
+		实例化必须使用staic factory methods
+		提供 getters
+		比较相等使用 equals，not ==
+	更严格的要求：http://blog.joda.org/2014/03/valjos-value-java-objects.html
